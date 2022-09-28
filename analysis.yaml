@@ -5,7 +5,7 @@ metadata:
 spec:
   metrics:
   - name: webmetric
-    successCondition: result.completed == true # Change this value to `result.completed == true` to fail the test
+    successCondition: result.completed == false # Change this value to `result.completed == true` to fail the test
     provider:
       web:
         url: "https://jsonplaceholder.typicode.com/todos/1" # URL returns a JSON object with completed being one of the values, it returns false by default
